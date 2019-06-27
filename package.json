@@ -1,0 +1,23 @@
+{
+  "name": "grocery-app",
+  "version": "1.0.0",
+  "description": "Application that allows for real-time grocery list updating and sharing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "export NODE_ENV=test&& jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntiZERO/grocery-app.git"
+  },
+  "author": "Gordon Ray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AntiZERO/grocery-app/issues"
+  },
+  "homepage": "https://github.com/AntiZERO/grocery-app#readme",
+  "devDependencies": {
+    "jasmine": "^3.4.0",
+    "request": "^2.88.0"
+  }
+}
