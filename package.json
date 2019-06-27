@@ -4,7 +4,7 @@
   "description": "Application that allows for real-time grocery list updating and sharing.",
   "main": "index.js",
   "scripts": {
-    "test": "export NODE_ENV=test&& jasmine"
+    "test": "SET NODE_ENV=test&& jasmine"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "devDependencies": {
     "jasmine": "^3.4.0",
     "request": "^2.88.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
