@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "SET NODE_ENV=test&& jasmine",
-    "start": "nodemon src/server.js"
+    "client": "cd client && npm run start",
+    "server": "nodemon src/server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -24,15 +26,20 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.1",
     "cookie-parser": "^1.4.4",
     "dotenv": "^5.0.1",
     "express": "^4.17.1",
     "express-flash": "0.0.2",
     "express-session": "^1.16.2",
+    "jquery": "^3.4.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-router-dom": "^5.0.1",
     "sequelize": "^5.9.0",
     "sequelize-cli": "^5.4.0"
   }
