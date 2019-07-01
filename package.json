@@ -4,7 +4,8 @@
   "description": "Application that allows for real-time grocery list updating and sharing.",
   "main": "index.js",
   "scripts": {
-    "test": "SET NODE_ENV=test&& jasmine"
+    "test": "SET NODE_ENV=test&& jasmine",
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,18 @@
     "request": "^2.88.0"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.9.0",
+    "sequelize-cli": "^5.4.0"
   }
 }
