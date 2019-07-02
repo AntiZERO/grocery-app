@@ -13,13 +13,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 appConfig.init(app,express);
 
 // API calls
-const staticRoutes = require("./routes/static");
+// const staticRoutes = require("./routes/static");
 const userRoutes = require("./routes/users");
 const listRoutes = require("./routes/lists");
 const itemRoutes = require("./routes/items");
 
 
-app.use('/',staticRoutes);
+// app.use('/',staticRoutes);
 app.use('/',userRoutes);
 app.use('/',listRoutes);
 app.use('/',itemRoutes);
@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
   // Handle React routing, return all requests to React app
   app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client/build/index.html'));
   });
 }
 app.listen(port, () => console.log(`Listening on port ${port}`));
