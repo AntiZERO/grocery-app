@@ -1,0 +1,15 @@
+.jumbotron {
+  margin-top: 15em;
+  background-color: #CBF5EB;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.display-3 .lead {
+  color: #152D50;
+}
+
+.lead {
+  font-style: italic;
+  font-weight: bold;
+}

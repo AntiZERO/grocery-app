@@ -1,0 +1,83 @@
+.container-item{
+  background-color: #071B39;
+  padding: 1em;
+  overflow-y: scroll;
+  height:30em;
+  border-radius: 1em;
+  opacity: .9;
+}
+
+h4 {
+  color:#CBF5EB;
+}
+
+.item {
+  font-size: 0.9em;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  opacity: initial;
+}
+
+.items {
+  margin: auto;
+
+}
+
+
+.item p {
+  margin-right: 0px;
+  padding-right: 0px;
+  text-align: left;
+
+}
+
+
+.update-btn {
+  margin: auto;
+}
+
+.delete-btn {
+  margin-left: 20px;
+
+  font-size: 0.9em
+}
+
+.purchase-btn {
+  font-size: 0.9em;
+  margin: auto;
+}
+
+.unpurchase-btn {
+  font-size: 0.9em;
+  margin: auto;
+}
+
+.newItemForm {
+  font-size: 0.9em;
+  margin: auto;
+}
+
+.new-item-input {
+  font-size: 0.9em;
+}
+
+.newItem {
+  margin-top: 20px;
+}
+
+#item-details {
+  color:#CBF5EB;
+  margin-right: 0;
+  border-radius: 2px;
+  text-shadow:
+ -.5px .5px 0 #000,  
+  0.5px .5px 0 #000,
+  -0.5px 0.5px 0 #000,
+   0.5px 0.5px 0 #000;
+}
+
+.add-btn {
+  margin: 5px, auto;
+}

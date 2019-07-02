@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import Navigation from './Navigation.js';
+import './styles/signup.css';
 
 
 class SignUpPage extends Component {
@@ -46,7 +47,7 @@ class SignUpPage extends Component {
 
 
     return (
-      <div className="container col-md-4 offset-md-4">
+      <div id="signOut" className="container col-md-4">
         <form className="signUpForm" onSubmit={this.onSubmit}>
           <div className="form-group row">
             <div className="col-sm-10 ">

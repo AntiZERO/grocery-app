@@ -1,0 +1,40 @@
+.lists {
+    font-size: 1em;
+}
+
+.list-link {
+    text-decoration: none;
+    color: #7FD2BF;
+    font-size: 1.5em;
+}
+
+.list-link:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.list-title {
+    margin-bottom: 5px;
+}
+
+.new-title-form {
+    font-size: 0.9em;
+}
+
+.btn {
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.lists-header {
+    font-style: normal;
+    color: #FFF;
+}
+
+.container-lists {
+    margin-top: 5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2F496F;
+    border-radius: 10px;
+}

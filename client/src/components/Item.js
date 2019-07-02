@@ -3,6 +3,8 @@ import { Link, Route } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
 import UpdateItem from './UpdateItem.js';
 
+import './styles/item.css';
+
 class Item extends Component {
   constructor(props) {
     super(props);
@@ -117,19 +119,22 @@ class Item extends Component {
     return (
       <div className="container">
         <h4>Items</h4>
-        <div className="items">
+        <div className="container-item">
           {
             this.state.items.map((item, index) =>
               <div className="row item" key={index}>
-                <p className="item col-md-4" id="item-details" key={index}>Item Name: {item.name}</p>
-                <p className="item col-md-4" id="item-details">How Many We Need: {item.quantity}</p>
+                <p className="item col-md-4" id="item-details" key={index}>
+                <strong>Item Name:</strong> {item.name}
+                <div></div>
+                <strong>How Many We Need:</strong> {item.quantity}
+                </p>
                 <UpdateItem updateItem={this.updateItem} itemId={item.id} />
                 {(
                   item.purchased ?
-                    <button className="btn btn-sml btn-secondary item unpurchase-btn col-md-2" type="button" onClick={this.unpurchasedItem.bind(this, item.id)} value="Unmark as Purchased">Unpurchase</button> :
-                    <button className="btn btn-sml btn-primary item purchase-btn col-md-2" type="button" onClick={this.purchasedItem.bind(this, item.id)} value="Mark as Purchased">Purchased</button>
+                    <button className="btn btn-sml btn-secondary item unpurchase-btn col-md-2" type="button" onClick={this.unpurchasedItem.bind(this, item.id)} value="Unmark as Purchased">Remove from Cart</button> :
+                    <button className="btn btn-sml btn-primary item purchase-btn col-md-2" type="button" onClick={this.purchasedItem.bind(this, item.id)} value="Mark as Purchased">Put In Cart</button>
                 )}
-
+                  
                 <button className="btn btn-sml btn-danger item delete-btn col-md-2" type="button" onClick={this.deleteItem.bind(this, item.id)} value="Delete Item">Delete Item</button>
 
               </div>

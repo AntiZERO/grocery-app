@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  color: #CBF5EB;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-style: none;
+  font-size: 1.5em;
+}
+
+#delete {
+  margin-left: 0px;
+}
+.list-form {
+
+  display: inline-block;
+  font-size: 1em;
+}
+
+.list-container {
+  margin-bottom: 30px;
+}
+
+.delete-button {
+  margin-top: 20px;
+}
+
+.edit-button {
+  margin-left: 5px;
+}
+
+.col1 {
+  float: left;
+  width: 25%;
+  margin-top: 5em;
+  margin-left: 1em;
+  background-color: #071B39;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+
+}
+
+.col2 {
+  float: right;
+  color: white;
+  margin-top: 2em;
+  width: 74%;
+  padding-top: 20px;
+}

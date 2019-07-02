@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
-
 import Item from "./Item.js";
+
+import './styles/list.css';
 
 class List extends Component {
   constructor(props) {
@@ -78,10 +79,10 @@ class List extends Component {
     console.log(this.state.list)
 
     return (
-      <div className="container">
-        <div className="col1">
-          <h3 className="header">{this.state.list.title}</h3>
+      <div className="list-container">
 
+        <div className="col1">
+          <h3 className="header">{this.state.list.name}</h3>
           <div>
             <form className="list-form" onSubmit={this.editTitle}>
               <input type="text" name="title" value={this.state.newTitle} onChange={e => this.setState({ newTitle: e.target.value })} placeholder="New Title" />
@@ -98,13 +99,6 @@ class List extends Component {
         <div className="col2">
           <Item listId={this.props.match.params.id} />
         </div>
-
-        {/* <div>
-                        <form className="list-form" id="delete" onSubmit={this.onDelete}>
-                                <button type="submit" className="btn btn-danger delete-button">Delete List</button>
-                        </form>
-                    </div> */}
-
       </div>
     )
   }

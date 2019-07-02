@@ -1,7 +1,7 @@
 import React, { Component} from 'react';
 import { Redirect, Link } from 'react-router-dom';
-
 import Landing from "./Landing.js";
+import './styles/signout.css';
 
 
 class SignOut extends Component {

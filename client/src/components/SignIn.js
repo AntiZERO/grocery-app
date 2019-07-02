@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import './styles/signin.css';
 
 
 
@@ -53,7 +54,7 @@ class SignInForm extends Component {
     }
 
     return (
-      <div className="container col-md-4 offset-md-4">
+      <div id="signIn" className="container col-md-4">
         <form className="signInForm" onSubmit={this.onSubmit}>
           <div className="form-group row">
             <div className="col-sm-10" id="field">
