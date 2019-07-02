@@ -55,7 +55,7 @@ class List extends Component {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ title: this.state.newTitle }),
+      body: JSON.stringify({ name: this.state.newTitle }),
     });
     console.log("update", response);
     const body = await response.text();

@@ -15,8 +15,7 @@ class Item extends Component {
       purchased: false,
       newDescription: '',
     }
-
-
+    
   }
 
   componentDidMount() {
