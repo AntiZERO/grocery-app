@@ -73,7 +73,7 @@ class Lists extends Component {
               className="new-title-form"
               value={this.state.listName}
               onChange={(e) => this.setState({ listName: e.target.value })}
-              placeholder="New List Tame">
+              placeholder="New List Name">
             </input>
             <button type="submit" className="btn btn-success"> Add List</button>
           </form>
