@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
-const appConfig = require("./src/config/main-config.js");
+const appConfig = require("./config/main-config.js");
 
 const port = process.env.PORT || 3001;
 
