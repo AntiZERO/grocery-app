@@ -1,4 +1,4 @@
-#Grocery-Share
+# Grocery-Share
  - A real time, shared application allowing for users to store grocery lists in a public format and update in real-time. This app is currently deployed [here](https://grocery-share.herokuapp.com/). 
  - Try it out for yourself with the following test account:
 
@@ -13,7 +13,7 @@
 
  ```
 
- ##Purpose 
+ ## Purpose 
 
  ### Problem As Given: 
  - Create a grocery list web-application that can be shared in real-time by multiple people.
