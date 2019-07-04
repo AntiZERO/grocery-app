@@ -34,18 +34,19 @@
 .col1 {
   float: left;
   width: 25%;
-  margin-top: 5em;
+  margin-top: 5.6em;
   margin-left: 1em;
   background-color: #071B39;
   padding-bottom: 20px;
   padding-top: 20px;
   border-radius: 10px;
+  opacity: .9;
 
 }
 
 .col2 {
   float: right;
-  color: white;
+  color: #FFF;
   margin-top: 2em;
   width: 74%;
   padding-top: 20px;
