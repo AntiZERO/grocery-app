@@ -102,7 +102,7 @@ While I was able to complete the base-level requirements of this project, I ran 
 
 - I'd add a max-length to item names. Additionally, with items, I'd also get it sorted so you can update the name of the item OR the quantity. Right now, if you want to update the item you want to enter both the item and the quantity or the field left blank updates the value as blank. This is a bad user experience and would be at the top of my list to fix as well.
 
-- I'd integrate React manually, rather than using create-react-app. It adds a lot of boilerplate code and also bloat that is not used within the project. 
+- I'd integrate React manually, rather than using create-react-app. It adds a lot of boilerplate code and also bloat that is not used within the project. Additionally, it throws off the scaffolding of the project which is quite frustrating.
 
 ## Final Notes
 
