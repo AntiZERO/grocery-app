@@ -40,15 +40,6 @@
   - [PostgreSQL](https://www.postgresql.org/)  
     - I chose Postgres due to comfortability with the technology, and its ability to quickly scale with my project as necessary. Postgres also interfaces well with the design of this project which would make database usage a stable process.
 
-### High-Level Project Challenges: 
-
- - **React Familiarity**
-   - I hadn't used React in over six months, to it wasn't fresh in my mind as I approached this project. I was committed to get back into the swing of it, but it took me a good portion of time to really get back up to speed while also learning to wire it together with the back-end. That said, utilizing React was one of my more difficult aspects of this project for me and we'll cover some more takeaways about why I felt that was the case in another section.
- - **REST API Creation**
-   - When starting this project I felt comfortable creating a back-end application, but this was my first experience with creating a REST API. Learning this was a nice adventure and helped me draw more mental connections between HTTP Methods, status codes, and how to properly serve server-side data to a front-end client. My mentor also discussed REST arcitetchure which helped me make some final jumps here to get an implementation of those methods. It's definitely something I want to continue working with, and will likely be a large focus of my next personal project.
-- **Styling**
-  - This goes hand in hand with my familiarity with react, but the reasoning here I believe is two-fold. On one hand, I didn't properly anticipate how a particular design choice around the user sign-up/sign-in would affect my intended design choice. On the other hand, I didn't take users with multiple resolutions into account, by not designing with a mobile-first mindset.
-
 ### Feature List
 
  - **User Authentication**
@@ -61,3 +52,18 @@
    - Users are able to update lists, and items located in a list with updates showing up across multiple devices in real-time.
  - **Marking Items as Obtained**
    - Users can make items as in or not in the cart. So they can in turn keep track of what is left and what they have in their cart already.
+
+## Challenges
+
+While I was able to complete the base-level requirements of this project, I ran into some challenges that resulted in me not implementing features or design facets that I would do differently looking back. I'll cover these in more detail below.
+
+### High-Level Project Challenges: 
+
+ - **React Familiarity**
+   - I hadn't used React in over six months, to it wasn't fresh in my mind as I approached this project. I was committed to get back into the swing of it, but it took me a good portion of time to really get back up to speed while also learning to wire it together with the back-end. That said, utilizing React was one of my more difficult aspects of this project for me and we'll cover some more takeaways about why I felt that was the case in another section.
+ - **REST API Creation**
+   - When starting this project I felt comfortable creating a back-end application, but this was my first experience with creating a REST API. Learning this was a nice adventure and helped me draw more mental connections between HTTP Methods, status codes, and how to properly serve server-side data to a front-end client. My mentor also discussed REST arcitetchure which helped me make some final jumps here to get an implementation of those methods. It's definitely something I want to continue working with, and will likely be a large focus of my next personal project.
+- **Styling**
+  - This goes hand in hand with my familiarity with react, but the reasoning here I believe is two-fold. On one hand, I didn't properly anticipate how a particular design choice around the user sign-up/sign-in would affect my intended design choice. On the other hand, I didn't take users with multiple resolutions into account, by not designing with a mobile-first mindset.
+   
+   
