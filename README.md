@@ -34,10 +34,30 @@
   - [Node.js](https://nodejs.org/en/)
     - I feel most at home within a complete JavaScript environment, so laying my foundations in Node.js where a natural choice. I'll be using react for the front-end, I'll get more into detail about that shortly. But suffice to say my goal here was to utilize something familiar to mitigate the challenge that I'd face when putting together the front end of this project. 
   - [Express](https://expressjs.com/)
-    - I chose express both to familiarity with the technology, but also its modularity. Express is light-weight, flexible, and gives you a lot of freedom to choose what parts you want and avoid unncessary bloat within your project.
+    - I chose express both to familiarity with the technology, but also its modularity. Express is light-weight, flexible, and gave me a lot of freedom to choose what parts I wanted and avoid unncessary bloat within this project.
   - [React](https://reactjs.org/)
-    - I chose React because it would give me a clear path towards making this project update in real-time with the need for a page-refresh thanks to React's utilization of a Virtual Document Object Model and its ability to process updates coming from my back-end while providing a seemless user experience. My comfortability with React is less solid here than with my chosen back-end technology. I knew using this would be a challenge, not using it within the last 6 months but I was confident of my ability to refresh myself and pick up a few new things along the way. 
+    - I chose React because it would give me a clear path towards making this project update in real-time without the need for a page-refresh thanks to React's utilization of a Virtual Document Object Model and its ability to process updates coming from my back-end while providing a seemless user experience. My comfortability with React is less solid here than with my chosen back-end technology. I knew using this would be a challenge, not using it within the last 6 months but I was confident of my ability to refresh myself and pick up a few new things along the way. 
   - [PostgreSQL](https://www.postgresql.org/)  
     - I chose Postgres due to comfortability with the technology, and its ability to quickly scale with my project as necessary. Postgres also interfaces well with the design of this project which would make database usage a stable process.
 
-## More Coming Soon
+### High-Level Project Challenges: 
+
+ - **React Familiarity**
+   - I hadn't used React in over six months, to it wasn't fresh in my mind as I approached this project. I was committed to get back into the swing of it, but it took me a good portion of time to really get back up to speed while also learning to wire it together with the back-end. That said, utilizing React was one of my more difficult aspects of this project for me and we'll cover some more takeaways about why I felt that was the case in another section.
+ - **REST API Creation**
+   - When starting this project I felt comfortable creating a back-end application, but this was my first experience with creating a REST API. Learning this was a nice adventure and helped me draw more mental connections between HTTP Methods, status codes, and how to properly serve server-side data to a front-end client. My mentor also discussed REST arcitetchure which helped me make some final jumps here to get an implementation of those methods. It's definitely something I want to continue working with, and will likely be a large focus of my next personal project.
+- **Styling**
+  - This goes hand in hand with my familiarity with react, but the reasoning here I believe is two-fold. On one hand, I didn't properly anticipate how a particular design choice around the user sign-up/sign-in would affect my intended design choice. On the other hand, I didn't take users with multiple resolutions into account, by not designing with a mobile-first mindset.
+
+### Feature List
+
+ - **User Authentication**
+   - Users are able to sign-up, sign-in, and sign-out of the application. User passwords are salted and hashed before being stored within the database using *bcrypt*.
+ - **Lists**
+   - Users are able to create, edit, delete, and view public shopping lists.
+ - **Items**
+   - Users are able to create, edit, delete, and view items that exist within public shoppiing lists. When creating an item a user provides a name and a quantity needed.
+ - **Real-Time Updating**
+   - Users are able to update lists, and items located in a list with updates showing up across multiple devices in real-time.
+ - **Marking Items as Obtained**
+   - Users can make items as in or not in the cart. So they can in turn keep track of what is left and what they have in their cart already.
