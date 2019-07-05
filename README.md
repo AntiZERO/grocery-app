@@ -3,11 +3,11 @@
  - Try it out for yourself with the following test account:
 
  ```
+ Testing Account 1: 
  email: tester@example.com
  password: testpass
 
- Account 2: 
-
+ Testing Account 2: 
  email: tester2@example.com
  password: testpass
 
@@ -26,17 +26,17 @@
   5. Accompany the code with a full test suit.
   6. Deploy the site to a web host.
 
-##Solutions: 
+## Solutions: 
 
   To tackle this assignment, first I needed to identify the technologies I would be using in this project. I settled on the following, with a brief reason as to why, as well as my comfort-level with each.
 
-## Tech Stack:
+### Tech Stack:
   - [Node.js](https://nodejs.org/en/)
-    - I feel most at home within a complete JavaScript environment, so laying my foundations in Node.js where a natural choice. I'll be using react for the front-end, I'll get more into detail about that shortly. But suffice to say my goal here was to mitigate the challenge that I'd face when putting together the front end of this project. 
+    - I feel most at home within a complete JavaScript environment, so laying my foundations in Node.js where a natural choice. I'll be using react for the front-end, I'll get more into detail about that shortly. But suffice to say my goal here was to utilize something familiar to mitigate the challenge that I'd face when putting together the front end of this project. 
   - [Express](https://expressjs.com/)
     - I chose express both to familiarity with the technology, but also its modularity. Express is light-weight, flexible, and gives you a lot of freedom to choose what parts you want and avoid unncessary bloat within your project.
   - [React](https://reactjs.org/)
-   - I chose react because it would give me a clear path towards making this project update in real-time with the need for a page-refresh thanks to React's utilization of a Virtual Document Object Model and its ability to process updates coming from my back-end while providing a seemless user experience. My comfortability with React is less solid here than with my chosen back-end technology. I knew using this would be a challenge, not using it within the last 6 months but I was confident of my ability to refresh myself and pick up a few new things along the way. 
+    - I chose React because it would give me a clear path towards making this project update in real-time with the need for a page-refresh thanks to React's utilization of a Virtual Document Object Model and its ability to process updates coming from my back-end while providing a seemless user experience. My comfortability with React is less solid here than with my chosen back-end technology. I knew using this would be a challenge, not using it within the last 6 months but I was confident of my ability to refresh myself and pick up a few new things along the way. 
   - [PostgreSQL](https://www.postgresql.org/)  
     - I chose Postgres due to comfortability with the technology, and its ability to quickly scale with my project as necessary. Postgres also interfaces well with the design of this project which would make database usage a stable process.
 
