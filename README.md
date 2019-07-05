@@ -64,11 +64,14 @@ While I was able to complete the base-level requirements of this project, I ran 
 - **Styling**
   - This goes hand in hand with my familiarity with react, but the reasoning here I believe is two-fold. On one hand, I didn't properly anticipate how a particular design choice around the user sign-up/sign-in would affect my intended design choice. On the other hand, I didn't take users with multiple resolutions into account, by not designing with a mobile-first mindset.
   
-### Specific Challenges and Roadblocks
+### Specific Issues and Roadblocks
 
 - **Navigation Bar/SignIn & SignOut Component Relationships**: One particular problem presented itsself late in the process, and that was my design of the parent/child component relationship between the navigation bar component and the sign-in/sign-up forms. My intent here had been to pass down a user state prop and send that data back to the navigation bar. I found that I couldn't get this to work as I really wanted it to. Another approach that I explored was passing it down within a `<Link />` as provided by react-router, but I couldn't get to a point where I was doing that successfully. Time issues prevented me from adjusting the component relationship to get the desired result. 
   - This challenge is the core of one of one of the things I would change about this project, this problem was one that ultimately had to inform my design choice. Rather than having seperate component views for both the 'Sign In' and 'Sign Out', they are displayed in the navigation which also thew off my choices in the design of the navigation bar. 
   - Though this challenge was frustrating and ultimately not one I was able to overcome within the project, it was a learning experience to allow me to see what doesn't work and how can improve that aspect in the future which in and of itsself is a valuable takeaway from this project.
+
+- **Mobile Design** - This project, at this core, is best suited to a mobile first experience. A user won't have a computer with 1920x1080 resolution or a 24inch monitor in front of them. I made attempts to make things responsive and for the most part the page is responsive but its not responsive in a clean way. What I mean by that is that the application doesn't look clean as it goes through different view sizes. 
+  - I was able to pick-up and utilize some new concepts in terms of responsive design and CSS. However, it also shows me here where my weaknesses lie and that I can put more time into mobile design concepts and media-queries for example.
 
    
    
