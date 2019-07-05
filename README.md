@@ -12,6 +12,13 @@
  password: testpass
 
  ```
+ - Running the Application Locally:
+   - Clone Repo to your local machine
+   - Create `.env` file and set environment variable for `cookieSecret`
+   - Run `npm install` to install all dependencies.
+   - Run `npm test` to run specs.
+   - Run `npm run dev` to start servers
+     Note: You will need to create a postgreSQL database as well in order to utilize the CRUD features of this application locally.
 
  ## Purpose 
 
@@ -39,6 +46,10 @@
     - I chose React because it would give me a clear path towards making this project update in real-time without the need for a page-refresh thanks to React's utilization of a Virtual Document Object Model and its ability to process updates coming from my back-end while providing a seemless user experience. My comfortability with React is less solid here than with my chosen back-end technology. I knew using this would be a challenge, not using it within the last 6 months but I was confident of my ability to refresh myself and pick up a few new things along the way. 
   - [PostgreSQL](https://www.postgresql.org/)  
     - I chose Postgres due to comfortability with the technology, and its ability to quickly scale with my project as necessary. Postgres also interfaces well with the design of this project which would make database usage a stable process.
+
+### Deployment
+ - I got a number of challenges during deployment of the application, but this really is due to my deploying late in my project rather than deploying early and regularly.
+ - Project was deploying using `Heroku`.
 
 ### Feature List
 
@@ -72,6 +83,40 @@ While I was able to complete the base-level requirements of this project, I ran 
 
 - **Mobile Design** - This project, at this core, is best suited to a mobile first experience. A user won't have a computer with 1920x1080 resolution or a 24inch monitor in front of them. I made attempts to make things responsive and for the most part the page is responsive but its not responsive in a clean way. What I mean by that is that the application doesn't look clean as it goes through different view sizes. 
   - I was able to pick-up and utilize some new concepts in terms of responsive design and CSS. However, it also shows me here where my weaknesses lie and that I can put more time into mobile design concepts and media-queries for example.
+  
+## Take-Aways
 
-   
-   
+### Enjoyable Aspects
+
+ - I really enjoyed putting together the API and learning to use Postman as part of this processes. I mentioned earlier that I felt comfortable in the back-end and it holds true throughout the entire project. Its where I've felt more comfortable through the curriculum as well so getting an opprotunity to do it in a way that allows me to create my own API is very satisfyinng. I want to continue refining my usage of this and plan on using a self-created API within my next API project.
+ 
+ - I also enjoyed getting back into React, there where technical struggles as a result of not flexing that muscle in so long. Towards the end of this project my mind started keying into the front-end work but most of my struggles and faults stemmed from that lack of continual use. Gaining back some of that familiarity was very enjoyable and I look forward to using react again in my next personal project extensively to continue to cement these concepts.
+
+### What I'd do differently
+
+ - I'd take a more mobile-first approach to this project from the outset, definitely. Again, this type of application is really only valuable if its easily viewed and used in a mobile format.
+
+- I'd adjust the parent/child component design in relation to the Navication and User related components, and not only get my original design idea but also get the displayed navigation bar to display in a cleaner fashion.
+
+- I'd also like to associate lists to a particular user and then display only that user's lists, so they aren't public across the board. Having them public is just leaving it open to be abused and other lists deleted, etc. Unfortunately, I ran out of time to add this feature which should be a given for a truly viable user experience.
+
+- I'd add a max-length to item names. Additionally, with items, I'd also get it sorted so you can update the name of the item OR the quantity. Right now, if you want to update the item you want to enter both the item and the quantity or the field left blank updates the value as blank. This is a bad user experience and would be at the top of my list to fix as well.
+
+- I'd integrate React manually, rather than using create-react-app. It adds a lot of boilerplate code and also bloat that is not used within the project. 
+
+## Final Notes
+
+ ### Boilerplate:
+  - Front-End was bootstraped with Create-React-App
+  - [Making a React App work with a Back-End API](https://www.freecodecamp.org/news/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0/) by Esau Silva.
+  - Referenced Previous Bloc Curriculum as well for structure.
+  
+ ### Notable Modules: 
+ - BCrypt
+ - Sequelize
+ - Passport
+ - Jasmine
+ - React-Router
+ - Concurrently
+
+
