@@ -55,9 +55,7 @@
 
 ## Challenges
 
-While I was able to complete the base-level requirements of this project, I ran into some challenges that resulted in me not implementing features or design facets that I would do differently looking back. I'll cover these in more detail below.
-
-### High-Level Project Challenges: 
+While I was able to complete the base-level requirements of this project, I ran into some challenges that resulted in me not implementing features or design facets that I would do differently looking back.
 
  - **React Familiarity**
    - I hadn't used React in over six months, to it wasn't fresh in my mind as I approached this project. I was committed to get back into the swing of it, but it took me a good portion of time to really get back up to speed while also learning to wire it together with the back-end. That said, utilizing React was one of my more difficult aspects of this project for me and we'll cover some more takeaways about why I felt that was the case in another section.
@@ -65,5 +63,11 @@ While I was able to complete the base-level requirements of this project, I ran 
    - When starting this project I felt comfortable creating a back-end application, but this was my first experience with creating a REST API. Learning this was a nice adventure and helped me draw more mental connections between HTTP Methods, status codes, and how to properly serve server-side data to a front-end client. My mentor also discussed REST arcitetchure which helped me make some final jumps here to get an implementation of those methods. It's definitely something I want to continue working with, and will likely be a large focus of my next personal project.
 - **Styling**
   - This goes hand in hand with my familiarity with react, but the reasoning here I believe is two-fold. On one hand, I didn't properly anticipate how a particular design choice around the user sign-up/sign-in would affect my intended design choice. On the other hand, I didn't take users with multiple resolutions into account, by not designing with a mobile-first mindset.
+  
+### Specific Challenges and Roadblocks
+
+- One particular problem presented itsself late in the process, and that was my design of the parent/child component relationship between the navigation bar component and the sign-in/sign-up forms. My intent here had been to pass down a user state prop and send that data back to the navigation bar. I found that I couldn't get this to work as I really wanted it to. Another approach that I explored was passing it down within a `<Link />` as provided by react-router, but I couldn't get to a point where I was doing that successfully. Time issues prevented me from adjusting the component relationship to get the desired result. 
+  - This challenge is the core of one of one of the things I would change about this project, this problem was one that ultimately had to inform my design choice. Rather than having seperate component views for both the 'Sign In' and 'Sign Out', they are displayed in the navigation which also thew off my choices in the design of the navigation bar. 
+  - Though this challenge was frustrating and ultimately not one I was able to overcome within the project, it was a learning experience to allow me to see what doesn't work and how can improve that aspect in the future which in and of itsself is a valuable takeaway from this project.
    
    
