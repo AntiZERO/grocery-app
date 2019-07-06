@@ -24,6 +24,7 @@
 
  ### Problem As Given: 
  - Create a grocery list web-application that can be shared in real-time by multiple people.
+   - Imagine you have a 4-person family, and each of you has a smart-phone with the web application running. When you arrive at the grocery store, you split up to shop individually. This allows the groceries to be acquired in the fastest possible way. Each person has the same grocery list on their phone. When one of you checks a grocery item off the shared list, it updates on everyone else’s list, preventing anyone from purchasing duplicate items. Similarly, items added to the list on any phone update to the same list.
 
  ### Functional Requirements (Minimum):
   1. Save, Update, and Delete items to/from a database of my choosing.
@@ -103,6 +104,8 @@ While I was able to complete the base-level requirements of this project, I ran 
 - I'd add a max-length to item names. Additionally, with items, I'd also get it sorted so you can update the name of the item OR the quantity. Right now, if you want to update the item you want to enter both the item and the quantity or the field left blank updates the value as blank. This is a bad user experience and would be at the top of my list to fix as well.
 
 - I'd integrate React manually, rather than using create-react-app. It adds a lot of boilerplate code and also bloat that is not used within the project. 
+
+- I'd integrate front-end testing in react. Regrettfully, I did not get to spend any time picking up the basics of testing React which hampered this aspect of the project.
 
 ## Final Notes
 
