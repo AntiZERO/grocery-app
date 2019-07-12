@@ -25,6 +25,12 @@ class Item extends Component {
 
   };
 
+  componentWillUpdate() {
+    this.getItems()
+      .then(res => this.setState({ items: res.items }))
+      .catch(err => console.log(err));
+  }
+
   getItems = async () => {
     const response = await fetch(`/lists/${this.props.listId}/items/all`);
     const body = await response.json();

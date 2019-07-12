@@ -19,6 +19,12 @@ class Lists extends Component {
       .catch(err => console.log(err));
   };
 
+  componentWillUpdate() {
+    this.getAllLists()
+    .then(res => this.setState({ lists: res.lists }))
+    .catch(err => console.log(err));
+  }
+
   getAllLists = async () => {
     const response = await fetch('/lists/all');
     const body = await response.json();

@@ -23,6 +23,12 @@ class List extends Component {
       .catch(err => console.log(err));
   };
 
+  componentWillUpdate() {
+    this.getList()
+      .then(res => this.setState({ list: res.list }))
+      .catch(err => console.log(err));
+  };
+
   getList = async () => {
     const response = await fetch(`/lists/${this.props.match.params.id}`);
     const body = await response.json();
